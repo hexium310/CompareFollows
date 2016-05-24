@@ -123,8 +123,8 @@ header('Content-Type: text/html; charset=utf-8');
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>比較</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <script src="js/jquery-1.12.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="/FollowsComparison/js/jquery-1.12.3.min.js"></script>
+        <script src="/FollowsComparison/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
