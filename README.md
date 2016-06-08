@@ -45,6 +45,3 @@ phpdotenv
 
     ALTER TABLE `users`
       ADD PRIMARY KEY (`userid`);
-
-### Setting
-setting.phpの定数にそれぞれTwitterのConsumerKey, ConsumerSecret, DB名, ホスト名, DBに接続するユーザー名, DBに接続するユーザーのパスワードを入力します。
