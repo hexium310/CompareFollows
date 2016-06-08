@@ -1,9 +1,12 @@
 # FollowsComparison
 
 自分用なのでいろいろ適当  
-2つの地点でのフォロー、フォロワーを比較してリム、新規フォロー等を表示します。
+2つの時点でのフォロー、フォロワーを比較してリム、新規フォロー等を表示します。
 
 ## Usage
+### Require
+phpdotenv
+.envはCompareFollows直下
 ### DB
     CREATE TABLE `followers` (
       `created_at` datetime NOT NULL,
