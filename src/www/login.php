@@ -26,7 +26,8 @@ if (isset($_SESSION['logined'])) {
 try {
     if (!isset($_SESSION['to'])) { // First Access
         $_SESSION['to'] = new TwistOAuth($_ENV['TO_CK'], $_ENV['TO_CS']);
-        $_SESSION['to'] = $_SESSION['to']->renewWithRequestToken('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
+        $host = $_SERVER['HTTP_X_FORWARDED_HOST'] ?? $_SERVER['HTTP_HOST'];
+        $_SESSION['to'] = $_SESSION['to']->renewWithRequestToken('http://' . $host . $_SERVER['REQUEST_URI']);
 
         header("Location: {$_SESSION['to']->getAuthenticateUrl()}");
         header('Content-Type: text/plain; charset=utf-8');
